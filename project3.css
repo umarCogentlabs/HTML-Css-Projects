@@ -1,0 +1,283 @@
+body{
+    background-color: #f7f7f7;
+  margin:0;
+  padding:0;
+}
+
+.container{
+/*     background-color: red; */
+}
+
+@media (min-width:550px)
+{
+  .container{
+
+    max-width:1000px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:750px)
+{
+    .header-right-bar{
+    flex-direction:column;
+        align-items:center;
+    text-align:center;
+  }
+  .header-right-bar > .header-2{
+    width:100%;
+    text-align:left;
+  }
+  .cards{
+    flex-direction:column;
+    align-items: center;
+
+  }
+  .card{
+/* margin: 20px; */
+    box-sizing: border-box;
+}
+}
+
+@media (max-width:625px)
+{
+  .icon{
+        display: none;
+  }
+    .get-email{
+padding-top:30px
+}
+  .container{
+    width:100%;
+    margin:auto;
+    text-align:center;
+  }
+  .header-right-bar{
+    flex-direction:column;
+        align-items:center;
+    text-align:center;
+  }
+  .header-right-bar > .header-2{
+    width:100%;
+    text-align:left;
+  }
+  .header-grid-container{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+
+}
+.icon{
+  color:darkorange;
+  width:10rem;
+  text-align:center;
+  margin: 1rem 0 0 0;
+}
+.grid{
+
+}
+
+.desc{
+/*     display: flex;
+  flex-direction: column;
+/*   justify-content: center; */
+  height: 125px;
+/*   width: 80vw; */
+/*   padding: 5px; */
+   */
+
+  line-height: 0.5em;
+}
+
+section{
+display:flex;
+
+/*       margin-top: 75px; */
+}
+h1{
+      margin-bottom: -0.8rem;
+}
+p{
+  line-height:auto;
+}
+iframe{
+  display:flex;
+  max-width: 560px;
+  width:100%;
+  margin: auto;
+  position:relative;
+  z-index=-1;
+}
+.header-grid-container{
+  display:flex;
+  min-height:75px;
+    background-color: #f7f7f7;
+  align-items: center;
+  text-align:center;
+z-index: 1;
+
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+
+.header-1-img{
+  max-width:20rem;
+  height:auto;
+  margin-left:2.5rem;
+/*       width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px; */
+}
+.header-1{
+  width:70%;
+  text-align:left;
+}
+
+.header-right-bar{
+  display:flex;
+  width:50%;
+}
+.header-2{
+  width:33%;
+  text-align:center;
+  list-style: none;
+}
+.get-email{
+  margin-top:75px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.get-email > input{
+max-width: 270px;
+    padding: 6px 10px;
+    width: 100%;
+/*   border-radius:3px; */
+}
+.get-email > #submit{
+  margin: 1rem auto;
+  max-width:150px;
+  border: none;
+background-color:#f1c40f;
+  font-weight: bold;
+  height:2.2rem;
+    font-size: 16px;
+
+    transition: 1s;
+
+}
+
+.get-email > #submit:hover {
+  background-color: orange;
+  cursor:pointer;
+}
+
+footer{
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+/*   margin-bottom:-10px; */
+}
+
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+   cursor:pointer;
+ }
+
+footer >ul {
+  display:flex;
+  text-align:end;
+justify-content: flex-end;
+  margin: 0;
+	padding: 0;
+  margin-right: 20px;
+
+/*       padding-top: 1rem;
+    padding-bottom: 1rem; */
+}
+.footer-flex >li{
+      list-style-type: none;
+  padding:0px 10px ;
+}
+footer >p {
+  display:flex;
+  text-align:end;
+  justify-content: flex-end;
+  margin: 0.4rem auto 0 auto;
+	padding: 0;
+    margin-right: 10px;
+  color: #3e3e3e;
+
+}
+
+.cards{
+  display:flex;
+/*   width:100% */
+  margin-top: 60px;
+}
+.card{
+  display:flex;
+  flex-direction:column;
+  max-width:350px;
+  width:100%;
+  text-align:center;
+  margin:0;padding:0;
+  margin: 20px 10px;
+  border:1px solid black;
+
+}
+.card > h4{
+  background-color: #ddd;
+  padding:1rem 0;
+
+}
+
+.card > #submit{
+  margin: 1rem auto;
+  max-width:150px;
+  border: none;
+background-color:#f1c40f;
+/*   font-weight: bold; */
+  height:2.2rem;
+    font-size: 16px;
+    transition: 1s;
+}
+.card > #submit:hover {
+  background-color: orange;
+  cursor:pointer;
+}
+.btn{
+      padding: 0 20px;
+}
+
+.card > h4
+{
+      margin: 0;
+}
+
+.card >p{
+  margin:0;
+  padding:0.4rem 0;
+}
+
+.card > .currency{
+ font-weight: bold;
+    font-size: 1.5rem;
+    padding:0.7rem 0;
+
+}
