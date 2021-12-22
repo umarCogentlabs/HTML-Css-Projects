@@ -1,6 +1,15 @@
 @import "inputFields";
 @import "variables";
 
+
+//media query function
+@mixin mQ($arg) {
+    @media screen and (min-width: $arg) {
+        @content;        
+    }
+}
+
+
 body{
     background: url($background_image);
       background-repeat: no-repeat;
@@ -12,6 +21,15 @@ body{
       margin: 3.125rem auto 0 auto;
     text-align:center;
     color:$white;
+ @include mQ(576px){
+    max-width: 540px;
+
+ }
+
+ @include mQ(768px){
+    max-width: 720px;
+
+ }
   
   }
   
@@ -22,17 +40,19 @@ body{
     box-sizing: border-box;
   }
   
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
-  }
+
+
+//   @media (min-width: 576px) {
+//     .container {
+//       max-width: 540px;
+//     }
+//   }
   
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }
+//   @media (min-width: 768px) {
+//     .container {
+//       max-width: 720px;
+//     }
+//   }
   
   form{
     text-align:left;
